@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: jenkins-grafana-build-time
+  server:
+    port: 3000
+    cors:
+      enabled: true
+---
+application:
+  jenkins:
+    baseurl: https://jenkins.company.com
+    user: username
+    apikey: apikey
