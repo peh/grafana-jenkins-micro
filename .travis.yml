@@ -10,3 +10,4 @@ deploy:
   file: build/libs/*
   on:
     repo: peh/grafana-jenkins-micro
+    tags: true
