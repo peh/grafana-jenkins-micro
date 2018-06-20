@@ -7,7 +7,7 @@ deploy:
   api_key:
     secure: LBbMgD+XvRGQxfRWkxOaBADqS5oqJNd7k70SSczZ5ZpT3rXYI/QwmbxXP9G3//1XrWtHyq1XFrQ0e9Mvy8F6iSeYBTrkM5BXp2WekV8NFGNozOLBPFiKDqml1sp6BVP2vRXJr88tD9xb6wG/K3Pl+tnKyzqs/cvfiIb1Mu0/Cd6aTdU24l+fxKtkSodlKd8d26Ahj9EGEvit3wGYElrx2NpzEwP+dDPsqjbnt2NATBmfBc4BJtRSWvMDMCRTN3MYE21f9GKOAam93XoY5iyRNPW/Jqq7loZyiZ3nHWVRm41uDkNrhUi0W+vWKazWbmWaYMefEMUHJ8kbKRkSKgaahQSz/7j4D+1lqFUH4EGSvhmritORPAs55aWstQieKUA7gjhjti44LK/RL+jR4SsdS4D8uxfOX2hD5JmitVcSYMD6eX/gXwBgX5qU8CnICUDGsArdsHNrjcWiMWjYy1CiE/tO4SLcPkNv6GhijYn5RjEDoPMl/UpDLTPSqraJNx1O0BPe6u7LyMsu5+8gaonIipIx2ZzR+M8yKIg03rKbCau0bjHjWT3Fvrq/WVWjnvnYTQiCwx68DdisT7zxbdrSh5PfmAq6BOytcrxDBBcuqe3bnZPFkEG8RFf6gi1KCplgpNPWh1e9k68PLz615GQjCZB6YWIFUxiW6u0kO7/tO+g=
   file_glob: true
-  file: build/libs/*
+  file: build/libs/jenkins-grafana-build-time-*-all.jar
   on:
     repo: peh/grafana-jenkins-micro
-    tags: true
+#    tags: true
