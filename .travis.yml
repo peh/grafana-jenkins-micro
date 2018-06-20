@@ -1,0 +1,10 @@
+language: java
+install: "./gradlew clean"
+script: "./gradlew assemble"
+deploy:
+  provider: releases
+  api_key:
+    secure: PZTHdlMjRu5i617+OhvgMoVJ7Y6bGsEgv3hGZsXDfm7n2Jbat+7CuL4WNP5A46uN3BbK1BQNnU4d3DU2vgoKbPGKckTGwxV2J8zBKroOljYxI+s5Ep9mdx9OX25vB9uG5tN9+5mcdnySlvOhGYAtx5+j1MujT0YzPQm4hEAD9kSypMs1JMX0p7QAa3hO91ixPlYjcNl3k0uLuQeeKQ40SRIW6+O9So+1tX4AZ4WIFXfFjGM2r/yfQmIvgY2DMvGy45f0zeLaBQIMV3hq3kWN29Mt/52aFnpWszJsZ4joB52Koz7Wr5CpBQn8X1kiA/Ed1cbpnl8J33zIoJeQYOmAl+L+xhYwkhWz1/QvmsA3TDUaCXThp1cELAwr3nL7RwLmDtQZUzC1GNH90HOz8/aLRddf99B1gw7dgqvcUI65qSbm8u1+RrhWcHBvJNVRbPfDNTnWkj853A2jkl8sTEKMyQmx7/plAesFV/uFa3sKXWVLTu08rKTTj/zxHUHJR7+RrygycSr0Xrs44WQO5UUe7a7aEWjCRgLCzTIwrZ17cR7sxf8HQsTgriQX1CYLiyJtK2sWlpoPePC+gHRBkiAJ9dySjgaQ+irH4tVMpwZxv2XvOB48d/ty+/M5CVSg5Ti4B+3xh2RGtFzL1abQAyhGshhSB96qSjYKA36QQsa5Hyg=
+  file: build/libs/jenkins-grafana-build-time-0.1-all.jar
+  on:
+    repo: peh/grafana-jenkins-micro
